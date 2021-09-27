@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "Barlow Semi Condensed";
+    src: url(https://fonts.google.com/specimen/Barlow+Semi+Condensed);
+    font-weight: var(--fw-normal);
+    font-weight: var(--fw-blod);
+}
+body{
+    font-size: 13px;
+    font-family: "Barlow Semi Condensed",sans-serif;
+    font-weight: var(--fw-normal);
+    }
+:root{
+    --clr__primary--moderate-violet :hsl(263, 55%, 52%);
+    --clr__primary--grayish-blue:hsl(217, 19%, 35%); 
+    --clr__primary--blackish-blue:hsl(219, 29%, 14%);
+    --clr__primary--white:hsl(0, 0%, 100%);
+
+    --clr__neutral--light-gray:hsl(0, 0%, 81%);
+    --clr__neutral--light-grayish-blue:hsl(210, 46%, 95%);
+
+    --fw-blod:600;
+    --fw-normal:500;
+
+
+}
+
