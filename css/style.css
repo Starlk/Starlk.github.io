@@ -1,5 +1,5 @@
 *{
-    box-sizing: border-box;
+     box-sizing: border-box; 
 }
 @font-face {
     font-family: "Barlow Semi Condensed";
@@ -10,7 +10,6 @@
 body{
     font-size: 13px;
     font-family: "Barlow Semi Condensed",sans-serif;
-    font-weight: var(--fw-normal);
     background-color: var(--clr__neutral--light-grayish-blue);
     margin: 0;
 
@@ -28,6 +27,119 @@ body{
     --fw-normal:500;
 
 
+}
+.main{
+    position: relative;
+    min-height: 100vh;
+  
+    
+}
+.card{
+   padding: 2em; 
+   margin: 5em;
+   border-radius: 10px;
+ 
+}
+.card:nth-child(1){
+    background-color: var(--clr__primary--moderate-violet);
+    background-image: url("/images/bg-pattern.svg");
+    background-repeat: no-repeat;
+    width: 550px;
+    height: 290px;
+    background-position: 75% 5%;
+}
+.card:nth-child(2){
+    background-color: var(--clr__primary--grayish-blue);
+    width: 300px;
+    position: absolute;
+    top:0;
+    left: 600px;
+    margin-top: 0;
+}
+.card:nth-child(3){
+    background-color: var(--clr__primary--white);
+    position: absolute;
+    width: 300px;
+    height: 290px;
+    bottom: 20px;
+    margin-bottom: 0;
+}
+.card:nth-child(4){
+    background-color: var(--clr__primary--blackish-blue);
+    position: absolute;
+    width: 550px;
+    left: 330px;
+    bottom: 20px;
+    margin-bottom: 0;
+}
+.card:nth-child(5){
+    background-color: var(--clr__primary--white);
+    position: absolute;
+    width: 250px;
+    top: 0;
+    margin-top: 0;
+    right: 0;
+}
+/*Header of article (card)*/
+.card__name{
+    font-size: .9rem;
+    font-weight: var(--fw-blod);
+}
+.card__grade{
+    font-size: .8rem;
+    font-weight: var(--fw-normal);
+    opacity: .5;
+
+}
+.card > header{
+    display: flex;
+    margin-bottom: 1.5em;
+
+}
+.img{
+    margin-right: 1em;
+    border-radius: 50%;
+    width: 3em;
+    height: 3em;
+    position: relative;
+    top: 10px;
+}
+.card__img{
+    border-width: 2px;
+    border-style: solid;
+}
+.card__img--white{
+    border-color: var(--clr__primary--white);
+}
+.card__img--morado{
+    border-color: var(--clr__primary--moderate-violet);
+}
+.box__text h2{
+    margin-bottom: 4px;
+}
+
+
+.card:nth-child(1),
+.card:nth-child(2),
+.card:nth-child(4){
+    color: var(--clr__primary--white); 
+   
+
+}
+
+.card:nth-child(5),
+.card:nth-child(3){
+    color: var(--clr__primary--grayish-blue);
+}
+/*Dando formato a los titulos*/
+.card__text--information{
+    font-weight: var(--fw-normal);
+    opacity: .5;
+}
+
+.card__text--strong{
+    font-weight: var(--fw-blod);
+    font-size: 1.2rem;
 }
 
 .attribution { font-size: 11px; text-align: center; }
