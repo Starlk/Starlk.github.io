@@ -28,59 +28,79 @@ body{
 
 
 }
-.main{
-    position: relative;
-    min-height: 100vh;
-  
-    
+p{
+    margin: 0;
+    padding: 0;
+}
+
+.cards{
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   grid-template-rows: repeat(2,1fr);
 }
 .card{
-   padding: 2em; 
-   margin: 5em;
+   padding: 1em; 
+   margin:1em;
    border-radius: 10px;
    box-shadow: 5px 5px 10px hsl(219 50% 34% / .6);
  
+ 
 }
+
+/*Formas de ordenar*/
+/*No existe una forma oficial, pero los expertos dice eso*/
+/*
+1- position
+2. box model
+3.text
+4.propiedades visuales (colores, border, backgroud)
+5. priopiedades varia (como opacity, animation, etc)
+*/
+
+/**/
 .card:nth-child(1){
+
+    /*Position*/
+    /*Box model*/
+   
+    /*text*/
+    /*Propiedades visuales*/
     background-color: var(--clr__primary--moderate-violet);
     background-image: url("/images/bg-pattern.svg");
     background-repeat: no-repeat;
-    width: 550px;
-    height: 290px;
     background-position: 75% 5%;
+    /*prioridades varias */
+    grid-column: 1 / span 2;
+
+
+
+    
 }
 .card:nth-child(2){
     background-color: var(--clr__primary--grayish-blue);
-    width: 300px;
-    position: absolute;
-    top:0;
-    left: 600px;
-    margin-top: 0;
+  
+ 
+ 
 }
 .card:nth-child(3){
     background-color: var(--clr__primary--white);
-    position: absolute;
-    width: 300px;
-    height: 290px;
-    bottom: 20px;
-    margin-bottom: 0;
+    
+  
 }
 .card:nth-child(4){
     background-color: var(--clr__primary--blackish-blue);
-    position: absolute;
-    width: 550px;
-    left: 330px;
-    bottom: 20px;
-    margin-bottom: 0;
+    grid-column: span 2;
+   
+    
 }
 .card:nth-child(5){
     background-color: var(--clr__primary--white);
-    position: absolute;
-    width: 250px;
-
-    top: 0;
-    margin-top: 0;
-    right: 0;
+    grid-column: 4;
+    grid-row: 1 / span 2;
+    
+}
+.card__text--strong{
+    margin-bottom: 1em;
 }
 /*Header of article (card)*/
 .card__name{
@@ -101,8 +121,8 @@ body{
 .img{
     margin-right: 1em;
     border-radius: 50%;
-    width: 3em;
-    height: 3em;
+  
+    flex-basis: 40px;
     position: relative;
     top: 10px;
 }
